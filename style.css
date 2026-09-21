@@ -44,6 +44,10 @@ nav {
     font-weight: var(--weight-500);
 }
 
+main {
+    border: 0.5px solid var(--blue-400);
+}
+
 .title {
     display: flex;
     gap: 0.5rem;
@@ -59,13 +63,15 @@ nav {
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
+/* HERO SECTION =-=-=-=-=-=-=-=-=-=-=-=-=--=-=-= */
+
 .hero-section {
     display: flex;
     flex-direction: column;
     color: var(--white);
     padding: 2rem;
     gap: 1rem;
-    border: 0.5px solid var(--blue-400);
+    /* border: 0.25px solid var(--blue-400); */
 }
 
 .hero-section p {
@@ -73,6 +79,44 @@ nav {
     font-weight: var(--weight-400);
 }
 
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
 
+/* STATS SECTION */
+
+.stats-section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.stats-div {
+    display: flex;
+    flex-direction: column;
+    padding: 1.4rem;
+    color: var(--white);
+    border: 0.25px solid var(--blue-400);
+    gap: 6rem;
+}
+
+
+.stats-div img {
+    width: 1.6rem;
+    height: auto;
+}
+
+.stats-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats-info {
+    font-size: var(--descriptions-nav-footer-font-size);
+    font-weight: var(--weight-400);
+}
+
+.stats-info h3 {
+    font-weight: var(--weight-500);
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
