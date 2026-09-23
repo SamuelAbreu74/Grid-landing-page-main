@@ -276,6 +276,11 @@ footer {
         padding: 2rem;
     }
 
+    .stats-div img {
+        width: 2.5rem;
+        height: auto;
+    }
+
 
     footer {
         padding-inline: 3rem;
