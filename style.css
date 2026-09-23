@@ -10,8 +10,8 @@
     --paragraph-font-size: 17px;
     --descriptions-nav-footer-font-size: 14px;
 
-    --weight-400:  400;
-    --weight-500:  500;
+    --weight-400: 400;
+    --weight-500: 500;
 }
 
 
@@ -26,7 +26,9 @@ html {
     height: 100%;
 }
 
-body{
+body {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     background-color: var(--blue-700);
@@ -44,7 +46,15 @@ nav {
     font-weight: var(--weight-500);
 }
 
+nav img {
+    cursor: pointer;
+}
+
+
+
 main {
+    width: 100%;
+    height: fit-content;
     border: 0.5px solid var(--blue-400);
 }
 
@@ -102,6 +112,11 @@ main {
     color: var(--white);
     border: 0.25px solid var(--blue-400);
     gap: 6rem;
+    cursor: pointer;
+}
+
+.stats-div:hover {
+    background-color: var(--blue-600);
 }
 
 
@@ -130,6 +145,7 @@ main {
 
 footer {
     display: flex;
+    height: fit-content;
     flex-direction: column;
     font-size: var(--descriptions-nav-footer-font-size);
     font-weight: var(--weight-400);
@@ -138,3 +154,66 @@ footer {
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+
+@media (min-width: 53.7rem) {
+/* 640px */
+/*  clamp(400px, 75svh, 640px) */
+    h1 {
+        font-size: 90px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    nav {
+        padding-inline: 3rem;
+        padding-block: 2rem;
+    }
+
+    .dot-icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    main {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .hero-section {
+        width: 80%;
+    }
+
+
+    .stats-section {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+
+    .stats-div {
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+
+    footer {
+        padding-inline: 3rem;
+        padding-block: 2rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
