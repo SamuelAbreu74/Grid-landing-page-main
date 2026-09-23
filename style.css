@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root {
     --blue-700: hsl(228, 99%, 58%);
     --blue-600: hsl(228, 100%, 60%);
@@ -12,10 +14,12 @@
 
     --weight-400: 400;
     --weight-500: 500;
+
 }
 
 
 * {
+    font-family: 'Inter';
     padding: 0;
     margin: 0;
     box-sizing: border-box;
